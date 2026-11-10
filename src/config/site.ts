@@ -34,11 +34,11 @@ export const siteConfig: SiteConfig = {
         'Actualizar con el enlace oficial de LinkedIn en src/config/site.ts (contact.linkedin.url).',
     },
     github: {
-      url: 'https://github.com/daniel-lenis-placeholder', // [PLACEHOLDER CONFIGURABLE]
-      handle: '@daniel-lenis [Configurar URL en site.ts]',
-      isPlaceholder: true,
+      url: 'https://github.com/danielstilenis24',
+      handle: '@danielstilenis24',
+      isPlaceholder: false,
       configNote:
-        'Actualizar con el perfil oficial de GitHub en src/config/site.ts (contact.github.url).',
+        'Perfil oficial de GitHub configurado en src/config/site.ts (contact.github.url).',
     },
     commercialInquiries: {
       label: 'Consultoría en IA, Automatización, Integración & Datos',

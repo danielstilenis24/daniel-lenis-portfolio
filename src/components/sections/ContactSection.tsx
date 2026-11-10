@@ -226,9 +226,13 @@ export function ContactSection() {
                     </span>
                   )}
                 </div>
-                <p className="font-display text-base font-bold text-slate-100">
-                  {siteConfig.contact.email.value}
-                </p>
+                <a
+                  href={`mailto:${siteConfig.contact.email.value}`}
+                  className="inline-flex items-center gap-1.5 font-display text-base font-bold text-slate-100 hover:text-brand-cyan transition-colors"
+                >
+                  <span>{siteConfig.contact.email.value}</span>
+                  <ExternalLink className="w-3.5 h-3.5 text-brand-cyan" />
+                </a>
                 <p className="font-mono text-xs text-slate-400">
                   {siteConfig.contact.email.configNote}
                 </p>
@@ -247,9 +251,15 @@ export function ContactSection() {
                     </span>
                   )}
                 </div>
-                <p className="font-display text-sm font-bold text-slate-100">
-                  {siteConfig.contact.linkedin.handle}
-                </p>
+                <a
+                  href={siteConfig.contact.linkedin.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-display text-sm font-bold text-slate-100 hover:text-brand-cyan transition-colors"
+                >
+                  <span>{siteConfig.contact.linkedin.handle}</span>
+                  <ExternalLink className="w-3.5 h-3.5 text-brand-cyan" />
+                </a>
                 <p className="font-mono text-xs text-slate-400">
                   {siteConfig.contact.linkedin.configNote}
                 </p>
@@ -262,15 +272,25 @@ export function ContactSection() {
                     <Github className="w-4 h-4" />
                     GITHUB & REPOSITORIOS
                   </span>
-                  {siteConfig.contact.github.isPlaceholder && (
+                  {siteConfig.contact.github.isPlaceholder ? (
                     <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 font-mono text-xs text-amber-300">
                       Placeholder Explícito
                     </span>
+                  ) : (
+                    <span className="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/30 font-mono text-xs text-emerald-300">
+                      Perfil Verificado
+                    </span>
                   )}
                 </div>
-                <p className="font-display text-sm font-bold text-slate-100">
-                  {siteConfig.contact.github.handle}
-                </p>
+                <a
+                  href={siteConfig.contact.github.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-display text-sm font-bold text-slate-100 hover:text-brand-cyan transition-colors"
+                >
+                  <span>{siteConfig.contact.github.handle}</span>
+                  <ExternalLink className="w-3.5 h-3.5 text-brand-cyan" />
+                </a>
                 <p className="font-mono text-xs text-slate-400">
                   {siteConfig.contact.github.configNote}
                 </p>
