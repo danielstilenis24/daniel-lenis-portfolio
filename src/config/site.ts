@@ -47,7 +47,7 @@ export const siteConfig: SiteConfig = {
     },
   },
   seo: {
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://daniellenis.dev',
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://intelicore.online',
     title: 'Daniel Lenis | AI Automation & Data Engineer — Portafolio Profesional',
     description:
       'Ingeniero de Sistemas especializado en Inteligencia Artificial, Automatización de Procesos (n8n, Power Automate, APIs), Ingeniería de Datos (Python, SQL, ETL) y Business Intelligence (Power BI).',
